@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "3fe91912-59d1-48f5-82fc-6c98a898d10b",
+		"name": "Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46272218"
+	},
+	"item": [
+		{
+			"name": "Create Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/login?token=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

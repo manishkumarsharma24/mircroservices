@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "724af6f2-1fee-4fa8-93f3-954b2bca21bb",
+		"name": "Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46272218"
+	},
+	"item": [
+		{
+			"name": "Generate Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "auth-client",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "manish",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "manish",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "zQWu9sgteuTxbvE2zY0SMCwmFps3FmjV",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/realms/auth-realm/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"realms",
+						"auth-realm",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payment Home",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "auth-client",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "manish",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "manish",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "zQWu9sgteuTxbvE2zY0SMCwmFps3FmjV",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8085/payment/api/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"payment",
+						"api",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Authenticator",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "auth-client",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "manish",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "manish",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "zQWu9sgteuTxbvE2zY0SMCwmFps3FmjV",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8085/payment/api/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"payment",
+						"api",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
